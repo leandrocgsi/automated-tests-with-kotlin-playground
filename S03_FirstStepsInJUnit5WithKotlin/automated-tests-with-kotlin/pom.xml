@@ -12,7 +12,7 @@
     <properties>
         <java.version>20</java.version>
         <kotlin.version>1.9.10</kotlin.version>
-        <junit-jupiter-engine.version>5.10.0</junit-jupiter-engine.version>
+        <junit-jupiter.version>5.10.0</junit-jupiter.version>
         <maven-surefire.version>2.22.2</maven-surefire.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <kotlin.code.style>official</kotlin.code.style>
@@ -29,8 +29,8 @@
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit-jupiter-engine.version}</version>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit-jupiter.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
