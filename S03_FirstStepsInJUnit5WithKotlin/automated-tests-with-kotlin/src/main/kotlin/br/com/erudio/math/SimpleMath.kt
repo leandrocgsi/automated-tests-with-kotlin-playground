@@ -3,6 +3,7 @@ package br.com.erudio.math
 import kotlin.math.sqrt
 
 class SimpleMath {
+
     fun sum(firstNumber: Double, secondNumber: Double): Double {
         return firstNumber + secondNumber
     }
