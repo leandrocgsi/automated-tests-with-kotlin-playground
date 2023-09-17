@@ -1,6 +1,7 @@
 package br.com.erudio.math
 
 import org.junit.jupiter.api.*
+import org.junit.jupiter.api.Assertions.assertEquals
 
 @DisplayName("Test Math Operations in SimpleMath Class")
 internal class SimpleMathTest {
@@ -48,7 +49,8 @@ internal class SimpleMathTest {
         val secondNumber = 2.0
         val actual = math!!.subtraction(firstNumber, secondNumber)
         val expected = 4.2
-        Assertions.assertEquals(
+
+        assertEquals(
             expected, actual
         ) {
             firstNumber.toString() + "-" + secondNumber +
@@ -64,7 +66,7 @@ internal class SimpleMathTest {
         val secondNumber = 2.0
         val actual = math!!.multiplication(firstNumber, secondNumber)
         val expected = 12.4
-        Assertions.assertEquals(
+        assertEquals(
             expected, actual
         ) {
             firstNumber.toString() + "*" + secondNumber +
@@ -80,11 +82,14 @@ internal class SimpleMathTest {
         val secondNumber = 2.0
         val actual = math!!.division(firstNumber, secondNumber)
         val expected = 3.1
-        Assertions.assertEquals(
+
+
+        assertEquals(3.1, actual, "The testDivision() did not produce expected result!")
+
+        assertEquals(
             expected, actual
         ) {
-            firstNumber.toString() + "/" + secondNumber +
-                    " did not produce " + expected + "!"
+            "$firstNumber + $secondNumber did not produce $expected!"
         }
     }
 
