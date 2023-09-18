@@ -4,28 +4,18 @@ import kotlin.math.sqrt
 
 class SimpleMath {
 
-    fun sum(firstNumber: Double, secondNumber: Double): Double {
-        return firstNumber + secondNumber
+    fun sum(numberOne: Double, numberTwo: Double) = numberOne + numberTwo
+
+    fun subtraction(numberOne: Double, numberTwo: Double) = numberOne - numberTwo
+
+    fun multiplication(numberOne: Double, numberTwo: Double) = numberOne * numberTwo
+
+    fun division(numberOne: Double, numberTwo: Double): Double {
+        if (numberTwo.equals(0.0)) throw ArithmeticException("Impossible to divide by zero!")
+        return numberOne / numberTwo
     }
 
-    fun subtraction(firstNumber: Double, secondNumber: Double): Double {
-        return firstNumber - secondNumber
-    }
+    fun mean(numberOne: Double, numberTwo: Double) = (numberOne + numberTwo) / 2
 
-    fun multiplication(firstNumber: Double, secondNumber: Double): Double {
-        return firstNumber * secondNumber
-    }
-
-    fun division(firstNumber: Double, secondNumber: Double): Double {
-        if (secondNumber == 0.0) throw ArithmeticException("Impossible to divide by zero!")
-        return firstNumber / secondNumber
-    }
-
-    fun mean(firstNumber: Double, secondNumber: Double): Double {
-        return (firstNumber + secondNumber) / 2
-    }
-
-    fun squareRoot(number: Double?): Double {
-        return sqrt(number!!)
-    }
+    fun squareRoot(number: Double) = sqrt(number)
 }
