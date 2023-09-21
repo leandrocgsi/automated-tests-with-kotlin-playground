@@ -4,7 +4,7 @@ import org.junit.jupiter.api.*
 import org.junit.jupiter.api.Assertions.assertEquals
 
 @DisplayName("Test Math Operations in SimpleMath Class")
-internal class SimpleMathTest {
+internal class SimpleMathTest02 {
     var math: SimpleMath? = null
     @BeforeEach
     fun beforeEachMethod() {
